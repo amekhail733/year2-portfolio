@@ -1,0 +1,65 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    padding-top: none;
+    align-items: center;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.contact-form {
+    flex: 1;
+    text-align: left;
+    max-width: 400px;
+    margin-right: 20px;
+}
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.form-group textarea {resize: vertical; min-height: 100px;}
+input:focus, textarea:focus{background-color: white; color:black;}
+button[type="submit"] {
+    background-color: #5710ad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {background-color: black;}
+.social-media {flex: 1; max-width: 300px; text-align: center;}
+.social-media h3 {font-size: 24px; margin-bottom: 20px;}
+.social-icons {display: flex; flex-direction: row; justify-content: space-between; font-size: 24px;}
+.social-icons a, .bold a i {color: #fff; text-decoration: none; margin-right: 10px; transition: 0.2s;}
+.social-icons a:hover, .bold a i:hover {color: #764fa5; cursor: pointer; transition: 0.2s}
+.copyright {text-align: center;}
+.bold{font-weight: 300;}
+@media (max-width: 700px){
+    .footer-content{justify-content: center;}
+}
